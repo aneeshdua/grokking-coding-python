@@ -22,7 +22,7 @@ class Solution:
         for i in range(right-left):
             temp = cur.next
             cur.next = temp.next
-            temp.next  = pre.next
+            temp.next = pre.next
             pre.next = temp
         
         return dummy.next
